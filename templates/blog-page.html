@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if page.toc %}
+<div class="toc">
+  <ul>
+    {% for h1 in page.toc %}
+    <li>
+      <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+      {% if h1.children %}
+      <ul>
+        {% for h2 in h1.children %}
+        <li>
+          <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+<main>
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="dateline subtitle">{{ page.date }}</p>
+  {{ page.content | safe }}
+</main>
+
+<script src="/js/scrollsync.js"></script>
+{% endblock content %}

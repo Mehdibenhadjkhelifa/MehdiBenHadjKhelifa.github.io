@@ -1,0 +1,4 @@
+<figure class="quote">
+    {{ body | markdown(inline=true) | safe }}
+    <figcaption>{{ author | markdown(inline=true) | safe }}</figcaption>
+</figure>

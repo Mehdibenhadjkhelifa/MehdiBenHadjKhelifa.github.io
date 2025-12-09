@@ -1,0 +1,18 @@
+{% macro postcard(page) %}
+<div class="post-card">
+{% if page.extra.image %}
+<a href="{{ page.permalink | safe }}"><img src="{{ page.permalink ~ page.extra.image | safe }}" class="post-card-thumb" /></a>
+{% else %}
+<div class="post-card-nothumb"><div class="post-card-nothumb-circle"></div></div>
+{% endif %}
+
+<div class="post-card-right">
+{% if page.taxonomies.category %}
+<span class="post-card-category">{{ config.extra.taxonomies.category[page.taxonomies.category.0].title }}</span>
+{% endif %}
+
+<span class="post-card-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></span>
+</div>
+
+</div>
+{% endmacro %}

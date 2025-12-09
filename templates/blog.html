@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% import "postcard.html" as postcard %}
+
+{% block content %}
+<main>
+  <h1 class="title">
+    {{ section.title }}
+  </h1>
+  <div class="post-cards">
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+    {% for page in section.pages %}
+          {{ postcard::postcard(page=page) }}
+    {% endfor %}
+  </div>
+</main>
+{% endblock content %}

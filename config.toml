@@ -1,0 +1,34 @@
+# The URL the site will be built for
+base_url = "https://mehdibenhadjkhelifa.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+taxonomies = [
+  { name = "category", feed = false, render = false }
+]
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+smart_punctuation = true
+extra_syntaxes_and_themes = ["themes"]
+
+highlight_themes_css = [
+  { theme = "rosepine", filename = "syntax-theme-dark.css" },
+  { theme = "rosepine", filename = "syntax-theme-light.css" },
+]
+
+
+# [extra]
+# Put all your custom variables here
+
+[extra.taxonomies.category]
+procedural-generation = { title = "Procedural Generation" }
+kde = { title = "KDE" }
+kernel = { title = "Kernel" }
