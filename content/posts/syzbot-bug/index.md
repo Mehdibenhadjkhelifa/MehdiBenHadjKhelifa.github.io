@@ -221,7 +221,7 @@ This fix did indeed fix this specific bug and the reproducer generated no more e
 
 ## Closing remarks && suggestions for future mentees
 
-[Discussion](https://lore.kernel.org/all/8727342f9a168c7e8008178e165a5a14fa7f470d.camel@ibm.com/) with maintainers has led to the suspision that other filesystems could also be affected with the same bug and I have already worked with the maintainer of HFS and HFS+ on a similar [patch](https://lore.kernel.org/all/20251201222843.82310-3-mehdi.benhadjkhelifa@gmail.com/) for HFS+. Fixing this bug in other filesystems will be my avenue of contributions for the following release cycles.
+[Discussion](https://lore.kernel.org/all/8727342f9a168c7e8008178e165a5a14fa7f470d.camel@ibm.com/) with maintainers has led to the suspicion that other filesystems could also be affected with the same bug and I have already worked with the maintainer of HFS and HFS+ on a similar [patch](https://lore.kernel.org/all/20251201222843.82310-3-mehdi.benhadjkhelifa@gmail.com/) for HFS+. Fixing this bug in other filesystems will be my avenue of contributions for the following release cycles.
 
 Furthermore, These patches have been run through religious testing by me and the maintainer of `HFS/HFS+` using many tools including xfstests,selftests,... which is a must for any bug fix before sending it.
 
@@ -232,7 +232,7 @@ My advice for any mentee that is working on a syzbot bug is to:
 3. **Testing is most important** : Having worked on a fix, You should not *only* test with the reproducer that triggers the bug. This relates to my first point too. After seeing that the bug no longer triggers with the reproducer and you are confident of the fix. Run any suitable tests that you can. This includes selftests, specific subsystem tests that are separate from the mainline tree, making a module yourself and doing a fault injection check and any other things that makes you more sure of the robustness of your change. This will highly affect how your patch will be treated by the linux community and if it is even worth to be looked at since lack of testing results in a lack of trust. And such testing is expect from contributors and assumed by maintainers.
 
 
-I hope that at least some people and some future mentees benefited from this bug walkthrough and I would like to thank my mentors shuah,david and khalid for their guidance,the welcoming linux kernel community and maintainers for their help. 
+I hope that at least some people and some future mentees benefited from this bug walkthrough and  I would like to thank my mentors [shuah](https://www.linkedin.com/in/shuah-khan/),[david](https://www.linkedin.com/in/david-hunter-34a10371/) and [khalid](https://www.linkedin.com/in/khalidaziz/) for their guidance,the welcoming linux kernel community and maintainers for their help.  
 
 Without this support, kickstarting such bug huntings would have been much harder.
 
