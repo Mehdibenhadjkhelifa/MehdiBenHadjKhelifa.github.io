@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/icon.png" type="image/png">
+  <link rel="stylesheet" href=https://mehdibenhadjkhelifa.github.io/style.css?h=80d7be82f4db6ce043b9>
+  <link rel="stylesheet" href=https://mehdibenhadjkhelifa.github.io/dark.css?h=0d9e8a03140eb52e643b
+    media="screen and (prefers-color-scheme: dark)">
+  <link rel="preload"
+    href="/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot"
+    as="font" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot" as="font"
+    crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot" as="font"
+    crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Fira_Sans/FiraSans-Regular.ttf" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Fira_Sans/FiraSans-Bold.ttf" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Fira_Sans/FiraSans-Italic.ttf" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="/fonts/Fira_Sans/FiraSans-BoldItalic.ttf" as="font" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" />
+
+  <title>From a user to a contributor. A Linux Kernel Mentorship Journey \  ~Mehdi</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" id="logo">~<span id="logo-full">Mehdi</span></a>
+      <div id="menu">
+        <a href="/posts/">Posts</a>
+      </div>
+    </nav>
+  </header>
+  <section class="section">
+    <div class="container">
+      
+
+<div class="toc">
+  <ul>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#prerequisite-tasks-and-acceptance">Prerequisite tasks and acceptance</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#initial-phase">Initial phase</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#strategic-call">Strategic call</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#reading-focused-phase">Reading focused phase</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#pulled-an-ace-by-the-end">Pulled an ace by the end</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#current-merged-patches">Current merged patches</a>
+      
+    </li>
+    
+    <li>
+      <a href="https://mehdibenhadjkhelifa.github.io/posts/kernel-mentorship/#final-remarks-tips-for-future-mentees">Final remarks &amp;&amp; Tips for future mentees</a>
+      
+    </li>
+    
+  </ul>
+</div>
+
+<main>
+  <h1 class="title">
+    From a user to a contributor. A Linux Kernel Mentorship Journey
+  </h1>
+  <p class="dateline subtitle">2025-12-10</p>
+  <p>I have been a linux user for couple of years now and at the same time, I’m into systems / low level programming and have always been interested in operating systems especially the linux kernel. So when the opportunity showed itself, I wasted no time in taking it.</p>
+<p>I first heard about the linux kernel mentorship in the <span class="sidenote-ref"><a href="https://discord.com/invite/techleef-1182627724674736178">techleef community</a><span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>techleef is a tunisian &amp; arab community of many talented learners which hosts multiple free online lessons about embedded systems, embedded linux, yocto and many more related subject all of which is offered by highly experienced engineers in those fields. It was founded by a yocto contributor and developer and our fellow tunisian <a href="https://www.linkedin.com/in/bhstalel/?originalSubdomain=tn">Talel</a><span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ from a member. We then both got into applying to the mentorship with very high hopes of making the most out of it.</p>
+<h2 id="prerequisite-tasks-and-acceptance"><a class="zola-anchor" href="#prerequisite-tasks-and-acceptance" aria-label="Anchor link for: prerequisite-tasks-and-acceptance">Prerequisite tasks and acceptance</a></h2>
+<p>So I have applied to enter the program in the 17th of july, which we then got assigned a lot of tasks to complete in order for the application to be reviewed at the end of the application window. The tasks were well structured and ordered by deadlines. One of the first task was to complete the <a href="https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfc103/">LFD103 course</a>,a beginner guide to linux kernel development, Which built the foundation for completing other Prerequisite tasks. All of the required tasks were helping any new kernel developer for building a good mental model of what is the kernel development workflow. This included many things like how to build &amp; boot the kernel, how to make custom modules, running selftests, decoding the stack trace, working with git to send email and make patches and many other similar tasks that lay the bases for what’s to come in the mentorship.We also are required to make some simple doc-related patches and send them to the linux kernel community to practice that too.So these tasks are more of a preparing phase rather than a show me your skill testing phase which makes this program a lot more approachable for many people that are unfamiliar with the kernel space of linux like myself. After a duration of 40 days approximately, this phase was over and all of the applicants would have submitted all of their prerequisite tasks which I also managed to do. The 5th of September, I have received an email from <code>LFX</code> informing me of my acceptance to the mentorship program.</p>
+<h2 id="initial-phase"><a class="zola-anchor" href="#initial-phase" aria-label="Anchor link for: initial-phase">Initial phase</a></h2>
+<p>After being accepted, we also have been invited to a regular meeting that was called <em>office hours</em> held every Wednesday. This wasn’t our only means of communication but <em>office hours</em> was our official meeting with our mentors which was really helpful in getting us to start on the right track and also guiding us along the mentorship based on our individual progress. In the first couple of meetings,the mentors were introducing us mentees to the structure of the program, recommending to us the pace that we should work in, showing us what to work on and what to avoid,revealing some tools that should help us and also receiving and answering our questions.Our mentors quickly realized that the number of mentees in this program are way higher than usual which consequently led to them requesting another mentor for help. After those first meetings, each new meeting was more of a tracking what the mentees were doing and recommending what to do and what not to do while also answering our questions and helping us reviewing our patches. <a href="https://www.linkedin.com/in/shuah-khan/">Shuah</a>, one of our mentors, was adding tasks accordingly from the start of the mentorship which help us fill some of the lacking areas of our knowledge. It was also recommended to us from the start to choose 2 subsystem at max to narrow our focus and have solid patches in those subsystems by the end of the mentorship. For me, initially I wanted to work on the <span class="sidenote-ref"><code>bpf</code><span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span><em>Berkeley Packet Filter</em><span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ subsystem since earlier this year I got a job offer in that area which I rejected. So I have  spent the first few weeks in exploring the <code>bpf</code> subsystem with multitude of resources and also experimenting with <a href="https://syzkaller.appspot.com/upstream">syzbot bugs</a> that are relative to <code>bpf</code>. Quickly after some <a href="https://lore.kernel.org/all/20250923210026.3870-1-mehdi.benhadjkhelifa@gmail.com/#r">failed patches</a> and the initial exploration of the <code>bpf</code> subsystem, it was apparent to me that it’s not the best choice as it’s a very <span class="sidenote-ref">complex subsystem<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>All kernel subsystems are complex but relatively speaking, the <code>bpf</code> subsystem is one of the harder ones<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ to get into given the restricted period of 3 months to get multiple patches in and it’s also very active and rapidly changing.</p>
+<h2 id="strategic-call"><a class="zola-anchor" href="#strategic-call" aria-label="Anchor link for: strategic-call">Strategic call</a></h2>
+<p>After the first couple of weeks of the mentorship while tinkering with the <code>bpf</code> subsystem and sending some related patches to that, I got caught up more in my university studies which required me to think of a strategic plan to follow. I opted to do some simpler refactoring patches based on the <a href="https://docs.kernel.org/process/deprecated.html">deprecated document</a> to get some patches accepted into the kernel so that I get closer to the minimal graduation requirements and also give myself more time by the end of the mentorship period to focus on more substantial patches with less or no time pressure. I managed to get 4 patches accepted here across different subsystems which are the <span class="sidenote-ref">mm<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>Memory management<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ subsystem,<span class="sidenote-ref">btrfs<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>B-tree filesystem<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ subsystem, the <code>block</code> subsystem and the <span class="sidenote-ref">drm<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>Direct Rendering Manager<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ subsystem. This process took couple of weeks and I still didn’t manage to narrow my focus on a specific subsystem. This is my next goal following my plan.</p>
+<h2 id="reading-focused-phase"><a class="zola-anchor" href="#reading-focused-phase" aria-label="Anchor link for: reading-focused-phase">Reading focused phase</a></h2>
+<p>In the last month of the mentorship, I wanted to make some more meaningful patches following my plan after the 4 accepted patches. But since I didn’t have a focus on a particular subsystem, I needed to sort that out first. I was inclined to focus on more stable subsystems like the mm and filesystems. To do so, I needed to have a more depth of knowledge on the general mechanisms of each subsystem. I then chose to read the <span class="sidenote-ref">OSTEP<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>Operating Systems, Three Easy Pieces<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+ book. I took my time reading most of it and taking notes to help me understand better the kernel code. After completing that, I was reading to jump back into making patches for those subsystems.</p>
+<h2 id="pulled-an-ace-by-the-end"><a class="zola-anchor" href="#pulled-an-ace-by-the-end" aria-label="Anchor link for: pulled-an-ace-by-the-end">Pulled an ace by the end</a></h2>
+<p>Jumping back to the code, I stumbled upon an improvement to the kernel selftests subsystem for the <em>mm</em> <code>userfaultfd</code>. I spun up a patch for that and it quickly got accepted. Since I have hit the minimal requirements for graduation, I then focused on solving a <code>syzbot</code> bug related to <span class="sidenote-ref">my new area of focus<span class="sidenote-number"><small class="sidenote"><!--&#8203;-->&nbsp;<span class="sidenote-surroundings">&nbsp;(</span>mm and fs subsystems<span class="sidenote-surroundings">)&nbsp;</span></small></span></span>
+. I have attempted many bugs all during the mentorship but they were a bit scattered. During this final run, I came close to a lot of fixes only to be beaten by some other contributors in terms of time to send a complete patch. Until I finally was the first one to fix a bug. I have made a <a href="https://mehdibenhadjkhelifa.github.io/posts/syzbot-bug/">blog post</a> talking about this <a href="https://syzkaller.appspot.com/bug?extid=ad45f827c88778ff7df6">syzbot bug</a> which was causing a memory leak in the <code>HFS</code> subsystem and how I solved in more details.I highly recommend reading that post.Although it wasn’t some crazy concurrency bug, but it led to me building good connection with maintainers and to discovering the presence of the same bug in multiple other filesystems which I’m currently working on and already have a patch for the <code>HFS+</code> subsystem.</p>
+<h2 id="current-merged-patches"><a class="zola-anchor" href="#current-merged-patches" aria-label="Anchor link for: current-merged-patches">Current merged patches</a></h2>
+<p>Currently, the following are my patches that have been merged to mainline and upstreamed which will be available in the next linux kernel release of version <code>6.19</code> while my <code>HFS/HFS+</code> <a href="https://lore.kernel.org/all/20251201222843.82310-1-mehdi.benhadjkhelifa@gmail.com/">patches</a> have been reviewed and are awaiting merge.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">2346b966c66a</span></span><span class="z-meta z-function-call z-arguments z-shell"> btrfs: refactor allocation size calculation in alloc_btrfs_io_context(</span><span class="z-meta z-function-call z-shell"></span>)
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">1ec5d5810b6f</span></span><span class="z-meta z-function-call z-arguments z-shell"> selftests/mm/uffd: remove static address usage in shmem_allocate_area(</span><span class="z-meta z-function-call z-shell"></span>)
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">f0c74b6cb91d</span></span><span class="z-meta z-function-call z-arguments z-shell"> mm/vmalloc: use kmalloc_array(</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">instead</span></span><span class="z-meta z-function-call z-arguments z-shell"> of kmalloc(</span><span class="z-meta z-function-call z-shell"></span>)
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">e5a82249d88c</span></span><span class="z-meta z-function-call z-arguments z-shell"> blk-mq: use struct_size(</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">in</span></span><span class="z-meta z-function-call z-arguments z-shell"> kmalloc(</span><span class="z-meta z-function-call z-shell"></span>)
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">603525846316</span></span><span class="z-meta z-function-call z-arguments z-shell"> drm/gud: Use kmalloc_array(</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">instead</span></span><span class="z-meta z-function-call z-arguments z-shell"> of kmalloc(</span><span class="z-meta z-function-call z-shell"></span>)
+</span></code></pre>
+<h2 id="final-remarks-tips-for-future-mentees"><a class="zola-anchor" href="#final-remarks-tips-for-future-mentees" aria-label="Anchor link for: final-remarks-tips-for-future-mentees">Final remarks &amp;&amp; Tips for future mentees</a></h2>
+<p>This journey was tough but very fulfilling. It helped bridge the gap between my linux userspace knowledge and linux kernel space. It’s needless to say that this mentorship has helped me acquired a lot of skills and deepen my knowledge on a lot of different tools all related to systems programming and linux kernel development and workflow. I wanted to share some of the knowledge that I learned during this mentorship from my and my fellow mentee’s mistakes and from the experience:</p>
+<ol>
+<li><strong>Take the LFD103 course seriously</strong>: When doing the prerequisite tasks, don’t just rush through the LFD103 course. Take your time understanding it’s contents and taking notes. It will help you in this mentorship and also help mentors by not asking questions that are already answered in the course.</li>
+<li><strong>Focus on the why not the how</strong>: This is regarding your commit message. It has become more evident to my and my fellow mentees that maintainers value the reason behind your patch more than anything. When writing your commit message, Think about describing why you are making this patch, what does it solve, why does it have to add that functionnality , etc.. Because even if your code is totally valid and reasonable, Without a strong reason for the patch, it will be hard for you to convince the maintainers to accept such a patch.On the other hand, If you do have a strong why but lack in your technical skills / implementation of your solution, the community and maintainers are very happy to guide you to the right implementation.</li>
+<li><strong>Testing,Testing,Testing</strong>: This should be clear as day, that any patch that you send should be carefully tested beforehand even if the change is very minimal and simple. But during my mentorship, Many of my fellow mentees have sent untested patches not knowing that testing is mandatory meanwhile maintainers have assumed testing of those patches. At the time of merge, those patches have caused a lot of regressions and many maintainers weren’t happy and contacted shuah to ensure that this point is communicated to the mentees.</li>
+<li><strong>Respect the community resources</strong>: when sending a patch to the kernel community, keep in mind that each patch requires community resources from time reviewing to testing and merging. So don’t just rush to send many incomplete patches that would waste those resources.This will only hurt your reputation among the kernel community.Instead,Take your time to ensure that everything is well tested and  within the kernel mailing list guidelines and your patch isn’t missing anything then you can send your patch. </li>
+<li><strong>We are humans</strong>: In your mentorship journey, You may expect that when you send a patch some maintainer should respond immediately.Well that’s not the case. Most of the maintainers and contributors are part of the linux kernel community on their own time except a few. So many have other jobs, life responsibility and the list goes on. So give the community time to review and respond to your patch. And also, don’t expect all maintainers of different subsystems to have the same opinion to similar patches.Even within the same subsystem maintainers may  differ on if the patch is good and worthwhile or not. So keep that in mind.</li>
+<li><strong>Bonus</strong>: I have discovered at the end of my mentorship about a <a href="https://reverser.dev/linux-kernel-explorer">very useful website</a> to start exploring the kernel source code in a more structure and guided way.It may not be up-to-date with the latest mainline kernel, but if you’re starting to hack your way into the kernel, I think it’s a very good starting point and I highly recommend giving it a try.</li>
+</ol>
+<p>Finally, I would like to say thank you to my mentors <a href="https://www.linkedin.com/in/shuah-khan/">shuah</a>,<a href="https://www.linkedin.com/in/david-hunter-34a10371/">david</a> and <a href="https://www.linkedin.com/in/khalidaziz/">khalid</a> and congratulate them for their work too because it was not easy for them at all to manage more than 100 applicants across two mentorships at the same time. AndThank you <a href="https://www.linkedin.com/in/moktar-sellami/">mokhtar</a> for sharing with us this amazing opportunity in the <a href="https://discord.com/invite/QY66HGvfAe">techleef community</a>.</p>
+<p><em>Happy Hacking Everyone!</em></p>
+
+</main>
+
+<script src="/js/scrollsync.js"></script>
+
+    </div>
+  </section>
+</body>
+
+</html>
